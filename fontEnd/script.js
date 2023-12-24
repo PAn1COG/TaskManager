@@ -3,7 +3,6 @@ $(document).ready(function () {
     populateProjects();
     populateProjectsforTasks();
 
-    // Create Project Form Submission
     $('#createProjectForm').on('submit', function (e) {
         e.preventDefault();
         var projectName = $('#projectName').val();
@@ -45,10 +44,8 @@ $(document).ready(function () {
         
     });
 
-    // Project Dropdown Change
     $('#projectDropdown').on('change', function () {
         var selectedProjectId = $(this).val();
-        // Implement Get Tasks by Project API call here
         $.ajax({
             url: 'http://127.0.0.1:8000/api/getAllTasksByProject?projectId=' + selectedProjectId,
             type: 'GET',
@@ -64,10 +61,8 @@ $(document).ready(function () {
     });
 
     $('#tasksContainer').sortable({
-        placeholder: "ui-state-highlight", // Optional: class for the placeholder element
+        placeholder: "ui-state-highlight", 
         update: function(event, ui) {
-            // Optional: add code here to handle the task order change
-            // For instance, update the order in the database
             var updatedOrder = $(this).sortable('toArray', { attribute: 'id' });
             $.ajax({
                 url: 'http://127.0.0.1:8000/api/updatePriority',
@@ -104,7 +99,6 @@ function populateProjects() {
             });
             $('#projectDropdown').html(options);
             // console.log(projects);
-            // Refresh projects list or handle UI updates
         },
         error: function (xhr, status, error) {
             console.error('Create project failed:', error);
@@ -135,8 +129,6 @@ function populateProjectsforTasks() {
 
 }
 
-
-// Dummy function to display tasks - Replace with actual API call
 function displayTasks(tasks) {
     var tasksHtml = '';
     $.each(tasks, function (index, task) {

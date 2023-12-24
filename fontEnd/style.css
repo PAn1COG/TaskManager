@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +19,6 @@ h2 {
     text-align: center;
 }
 
-/* Section Styling */
 section {
     background-color: white;
     padding: 25px;
@@ -28,7 +27,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Form Styles */
 form {
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +59,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* Task Container Styles */
 #tasksContainer {
     margin-top: 30px;
 }
@@ -108,7 +105,7 @@ button:hover {
 .deleteBtn:hover {
     background-color: #c0392b;
 }
-/* Create Task Section Styling */
+
 #createTask {
     background-color: #ffffff;
     padding: 20px;
@@ -156,83 +153,3 @@ button:hover {
 #createTask button:hover {
     background-color: #2980b9;
 }
-
-/* Responsive Design for Create Task Section */
-@media (max-width: 768px) {
-    #createTask form {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Additional styling for specific needs */
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    input[type="text"], select {
-        min-width: 100%;
-    }
-
-    .task button {
-        margin-top: 10px;
-    }
-
-    form {
-        flex-direction: column;
-    }
-}
-
-/* Additional Styling */
-/* Feel free to add more styling according to your needs */
-
-/* #createProjectSection,
-#projectTasksSection {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#createProjectForm input,
-#projectDropdown {
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-#createProjectForm button {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-#createProjectForm button:hover {
-    background-color: #45a049;
-}
-
-.task {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #eee;
-    border-radius: 3px;
-    cursor: move;
-}
-
-.task button {
-    padding: 2px 5px;
-    margin-left: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.task button:hover {
-    background-color: #0056b3;
-} */
