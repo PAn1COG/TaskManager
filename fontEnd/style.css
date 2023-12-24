@@ -1,4 +1,191 @@
-#createProjectSection,
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="text"], select {
+    flex: 1;
+    min-width: calc(50% - 20px);
+    padding: 12px;
+    border: 2px solid #d1d8e0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Task Container Styles */
+#tasksContainer {
+    margin-top: 30px;
+}
+
+.task {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #ecf0f1;
+    transition: border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task:hover {
+    border-color: #3498db;
+}
+
+.task button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.updateBtn {
+    background-color: #6dec24;
+    color: black;
+}
+
+.deleteBtn {
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 10px;
+}
+
+.updateBtn:hover {
+    background-color: #6dec24;
+}
+
+.deleteBtn:hover {
+    background-color: #c0392b;
+}
+/* Create Task Section Styling */
+#createTask {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#createTask h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+#createTask form {
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+#createTask input[type="text"], #createTask select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#createTask button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#createTask button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design for Create Task Section */
+@media (max-width: 768px) {
+    #createTask form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional styling for specific needs */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input[type="text"], select {
+        min-width: 100%;
+    }
+
+    .task button {
+        margin-top: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
+
+/* Additional Styling */
+/* Feel free to add more styling according to your needs */
+
+/* #createProjectSection,
 #projectTasksSection {
     margin: 20px;
     padding: 15px;
@@ -48,4 +235,4 @@
 
 .task button:hover {
     background-color: #0056b3;
-}
+} */
