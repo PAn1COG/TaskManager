@@ -11,7 +11,7 @@ class TaskController extends Controller
     function hello_test(){
         return "hello";
     }
-    //testread
+    //test read
     function testRead(Request $req) {
         $src = DB::select('select * from tasks where status != "complete"');
         return $src;
